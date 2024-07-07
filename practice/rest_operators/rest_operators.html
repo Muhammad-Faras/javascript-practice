@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>rest operators</title>
+</head>
+<body>
+    <script>
+    function sum(num1,num2){
+        return `${num1+num2}`        
+    }
+    // this function is designed for 2 inputs but 3 were given for this we use rest operator 
+    console.log(sum(2,3,4)) 
+
+    function addition(name,...args){
+        var sum = 0
+        for(let i in args){
+            sum = sum + args[i] 
+        }
+        var nam = name
+        console.log(nam)
+        console.log(sum)
+
+        return `${sum}`
+
+    }
+
+    console.log(addition("faras",2,3,4))
+    </script>
+    
+</body>
+</html>

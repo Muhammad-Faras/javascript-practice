@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Template Strings</title>
+</head>
+<body>
+    
+    <script>
+        <!-- before  Template Strings -->
+        var a = "Boy";
+        var b = "Hello" + " " + a;
+        console.log(b);
+
+        // After Literal Strings
+        // use backticks
+        var c = "Boy";
+        var d = `Hello ${c}`;
+        console.log(d);
+
+        let FirstName =  "Muhammad"
+        let LastName =  "Faras"
+
+        function FullName(fname, lname){
+            return `${fname} ${lname}`
+        }
+
+        let say = `Hello ${FullName(FirstName,LastName)}`
+        document.write(say)
+    </script>
+</body>
+</html>
