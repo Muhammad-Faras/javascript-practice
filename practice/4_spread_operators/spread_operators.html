@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>spread operators</title>
+</head>
+<body>
+    <script>
+        function sum(...args){ //...args take arr as 1 argument but expect multiple
+            var sum =0;
+            for(let i in args){
+                sum +=args[i];
+            }
+            console.log(sum)
+        }
+        arr = [1,2,3,4]
+        sum(2,3,arr) // passing arr like 1 argument
+
+        function addition(...args){ //...args take arr as 1 argument but expect multiple
+            var sum =0;
+            for(let i in args){
+                sum +=args[i];
+            }
+            console.log(sum)
+        }
+        arr = [1,2,3,4]
+        addition(2,3,...arr) // passing arr like 1 argument
+
+
+    </script>
+</body>
+</html>
